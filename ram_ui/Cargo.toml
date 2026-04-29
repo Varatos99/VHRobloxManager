@@ -4,9 +4,8 @@ version = "1.4.1"
 edition = "2021"
 description = "VH Roblox Manager — Roblox Account Manager"
 license = "MIT"
-repository = "https://gitlab.com/centerepic/robloxmanager"
+repository = "https://github.com/Varatos99/VHRobloxManager"
 authors = ["Varatos99"]
-# Honorable mention: centerepic
 
 [dependencies]
 ram_core = { path = "../ram_core" }
