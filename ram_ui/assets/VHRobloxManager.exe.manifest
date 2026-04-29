@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.4.0.0" processorArchitecture="*" name="VHRobloxManager" type="win32"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15f9a}"/>
+      <supportedOS Id="{1f676c76-80e1-4239-8045-304b24436c38}"/>
+      <supportedOS Id="{4a2f98e4-11aa-4aac-92d0-cf22e1b8e3c8}"/>
+    </application>
+  </compatibility>
+</assembly>

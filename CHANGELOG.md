@@ -1,0 +1,78 @@
+# Changelog
+
+## v1.4.1
+
+### Added
+- **Log file** — logs saved to `%APPDATA%\VHRobloxManager\vhrm_.log` (INFO level only, user-friendly).
+- **Test Now button** — manually test AFK prevention in Settings.
+- **AFK methods logged** — each ESC send method is logged for debugging.
+- **Donate tab crypto addresses** — updated with real wallet addresses (BTC, ETH, SOL, LTC).
+
+### Changed
+- **AFK Prevention** — ESC sent with 4 different methods (SendInput, PostMessageW, keybd_event, SendInput again) with random timing (80-250ms hold) to bypass Byfron. Tested and working.
+- **Log filter** — changed to INFO only (no debug logs) for cleaner user logs.
+
+### Fixed
+- Multi-instance Roblox close issue when program closes — noted in TODO for future fix.
+
+## v1.4.0
+
+### Added
+- **Multi Tab Management (Experimental)** — Window management tools in Settings: organize Roblox windows in grid, minimize/restore all, memory cleanup, and AFK prevention with random ESC intervals.
+- **Donate tab** — Support development page with crypto addresses (BTC, ETH, USDT, SOL).
+
+### Fixed
+- Private server list showing duplicates across tabs.
+- Data folder changed from "RM" to "VHRobloxManager" for consistency.
+
+### Changed
+- VIP Server price check disabled — Roblox API doesn't return prices for games without user servers.
+- Private server UI redesigned — shows only in PrivateServers tab, proper owner display names.
+
+## v1.3.1
+
+### Notice
+- **Project moved to GitLab** — RM has moved from GitHub to GitLab. The new home is [gitlab.com/centerepic/robloxmanager](https://gitlab.com/centerepic/robloxmanager). Future releases and updates will be published there. The update checker has been switched to the new location.
+
+## v1.3.0
+
+### Added
+- **Private server grouping** — private servers are now grouped by game with a thumbnail and game name in each group header.
+- **Share link resolution** — paste an `rbxShareLink://` URL directly when adding a private server; RM resolves the access code automatically.
+- **Game name and icon resolution** — game names and thumbnails are fetched in the background (no authentication required) and shown in the private servers tab.
+- **Account groups** — accounts can be organised into named, colour-coded groups via drag-and-drop. Groups are collapsible and support bulk actions.
+- **Custom account sorting** — accounts and groups can be reordered by dragging, or sorted alphabetically by name or by online status. Custom order is persisted across restarts.
+- **Interactive first-launch tutorial** — new users see a 6-step guided walkthrough that highlights key UI elements (Add Account button, cookie field, account list, Launch button) and advances automatically as each action is completed.
+
+### Fixed
+- Private server name and icon were not resolving due to using an API endpoint that requires authentication. Switched to the unauthenticated `universeIds` endpoint.
+- `universe_id` from the share link API response is now stored on the `PrivateServer` model and used for all subsequent name/icon lookups.
+- UI no longer repaints continuously when idle; repaints are now triggered only when backend events arrive.
+
+## v1.2.1
+
+### Fixed
+- **"What's New" window** — changelog now renders with proper formatting (headings, bold text, bullet points) instead of raw markdown.
+
+## v1.2.0
+
+### Added
+- **Automatic update check** — on startup, checks GitLab for a newer release and shows a clickable "Update available" link in the top bar.
+- **"What's New" changelog** — on the first launch after an update, a window displays the changelog for the new version.
+- **Standard data directory** — config and account data now stored in `%APPDATA%\RM` instead of next to the exe, so the app works from any location.
+- **Legacy data migration** — if existing data is found next to the exe, a native dialog offers to move it to the new location on startup.
+- **Version in title bar** — the window title now shows the current version number.
+
+## v1.1.0
+
+### Added
+- **Anonymize names** — new toggle in Settings > Privacy that replaces all usernames and display names with generic "Account 1", "Account 2", etc. throughout the UI.
+
+### Fixed
+- **Favorite places** — clicking a favorite button now correctly populates the Place ID field. Previously an invisible overlapping widget was stealing clicks.
+- **Favorite deletion** — right-clicking a favorite now shows a proper context menu with a "Remove" option, replacing the non-functional previous approach.
+- Favorites row now wraps when there are many entries instead of overflowing off-screen.
+
+## v1.0.0
+
+- Initial release.

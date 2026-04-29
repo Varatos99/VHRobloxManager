@@ -1,0 +1,4 @@
+LTC = ltc1qrvd6kxsx65zpz4et4xzmq4qdvwj86m9xmd43c8 
+BTC = bc1qf2vq9y7ahpkxjlrscaydwlau6t38qttt8fw3j9 
+ETH = 0x07aB125E66DA622B9AcFA20C5797bb7C9b05e647 
+SOL = ETdx5cpkM7BMnGq8zULou2Y7idp7SNf2aXmig52X7GJ2 
