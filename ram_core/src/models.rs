@@ -210,7 +210,7 @@ impl Default for AppConfig {
             last_seen_version: None,
             sort_mode: "Custom".to_string(),
             private_servers: Vec::new(),
-            check_for_updates: false,
+            check_for_updates: true,
             ignore_multi_instance_warning: false,
         }
     }

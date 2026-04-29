@@ -51,27 +51,20 @@ pub fn show_about_tab(ctx: &eframe::egui::Context) {
 
                 ui.vertical(|ui| {
                     ui.horizontal(|ui| {
-                        ui.label("Author:");
-                        ui.hyperlink_to("Varatos99", "https://discord.gg/PLACEHOLDER");
-                    });
-
-                    ui.add_space(8.0);
-
-                    ui.horizontal(|ui| {
-                        ui.label("Honorable mention:");
+                        ui.label("GitHub:");
                         ui.hyperlink_to(
-                            "centerepic",
-                            "https://gitlab.com/centerepic/robloxmanager",
+                            "Varatos99/VHRobloxManager",
+                            "https://github.com/Varatos99/VHRobloxManager",
                         );
                     });
 
                     ui.add_space(8.0);
 
                     ui.horizontal(|ui| {
-                        ui.label("Repository:");
+                        ui.label("Based on:");
                         ui.hyperlink_to(
-                            "GitHub (coming soon)",
-                            "https://github.com/USERNAME/VHRobloxManager",
+                            "Ram2 (centerepic)",
+                            "https://gitlab.com/centerepic/robloxmanager",
                         );
                     });
                 });
